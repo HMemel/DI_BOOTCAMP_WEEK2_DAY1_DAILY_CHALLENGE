@@ -28,6 +28,7 @@ console.log(array)
 
 let array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
+// Access and then console.log “Oranges”.
 let nested_array = array2[1];
 console.log(nested_array[1])
 
