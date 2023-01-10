@@ -23,6 +23,9 @@ array.reverse()
 
 console.log(array)
 
+
+// Exercise 2:
+
 let array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
 let nested_array = array2[1];
