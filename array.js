@@ -1,23 +1,32 @@
 // Exercice 1
-const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 
+let array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+let bad_banana = array.indexOf("Banana");
 // Remove Banana from the array.
-fruits.shift()
+array.splice(bad_banana, 1)
+console.log(array);
 // Sort the array in alphabetical order.
-fruits.sort()
+array.sort();
 
 // Add “Kiwi” to the end of the array.
-fruits.push("Kiwi");
+array.push("Kiwi")
+
+let bad_apples = array.indexOf("Apples");
 
 // Remove “Apples” from the array. Don’t use the same method as in part 1.
-fruits.splice(1,1)
+array.splice(bad_apples, 1)
 
 // Sort the array in reverse order. 
-fruits.reverse()
+array.sort();
+array.reverse()
 
-// Exercice 2
+console.log(array)
 
-const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-// Access and then console.log “Oranges”.
+let array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
-console.log(moreFruits[1][1][0])
+let nested_array = array2[1];
+console.log(nested_array[1])
+
+let orange = array2[1][1]
+console.log(orange)
